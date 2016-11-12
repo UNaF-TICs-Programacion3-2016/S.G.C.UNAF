@@ -1,0 +1,17 @@
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\bin\Debug\Sistema Gestion Contartos.exe.config
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\bin\Debug\Sistema Gestion Contartos.exe
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\bin\Debug\Sistema Gestion Contartos.pdb
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\bin\Debug\Sistema Gestion Contartos.xml
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema Gestion Contartos.vbprojResolveAssemblyReference.cache
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema_Gestion_Contartos.frmMenu.resources
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema_Gestion_Contartos.Resources.resources
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema Gestion Contartos.vbproj.GenerateResource.Cache
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema Gestion Contartos.exe
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema Gestion Contartos.xml
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema Gestion Contartos.pdb
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema_Gestion_Contartos.frmMaestroCV.resources
+C:\Users\CaroL\Desktop\app\Sistema Gestion Contartos\Sistema Gestion Contartos\obj\Debug\Sistema_Gestion_Contartos.frmDatosCV.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\bin\Debug\Sistema Gestion Contartos.exe.config
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\Debug\Sistema Gestion Contartos.exe
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\Debug\Sistema Gestion Contartos.xml
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\Debug\Sistema Gestion Contartos.pdb
