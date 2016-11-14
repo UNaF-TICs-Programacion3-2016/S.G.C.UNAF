@@ -79,16 +79,52 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmDatosAspirantes.Designer.vb">
+      <DependentUpon>frmDatosAspirantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosAspirantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatosContratos.Designer.vb">
+      <DependentUpon>frmDatosContratos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosContratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmDatosCV.Designer.vb">
       <DependentUpon>frmDatosCV.vb</DependentUpon>
     </Compile>
     <Compile Include="frmDatosCV.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmDatosDictamenes.Designer.vb">
+      <DependentUpon>frmDatosDictamenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosDictamenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaestroAspirantes.Designer.vb">
+      <DependentUpon>frmMaestroAspirantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaestroAspirantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaestroContratos.Designer.vb">
+      <DependentUpon>frmMaestroContratos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaestroContratos.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMaestroCV.Designer.vb">
       <DependentUpon>frmMaestroCV.vb</DependentUpon>
     </Compile>
     <Compile Include="frmMaestroCV.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaestroDictamenes.Designer.vb">
+      <DependentUpon>frmMaestroDictamenes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaestroDictamenes.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -111,11 +147,29 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosAspirantes.resx">
+      <DependentUpon>frmDatosAspirantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosContratos.resx">
+      <DependentUpon>frmDatosContratos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDatosCV.resx">
       <DependentUpon>frmDatosCV.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosDictamenes.resx">
+      <DependentUpon>frmDatosDictamenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaestroAspirantes.resx">
+      <DependentUpon>frmMaestroAspirantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaestroContratos.resx">
+      <DependentUpon>frmMaestroContratos.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMaestroCV.resx">
       <DependentUpon>frmMaestroCV.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaestroDictamenes.resx">
+      <DependentUpon>frmMaestroDictamenes.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

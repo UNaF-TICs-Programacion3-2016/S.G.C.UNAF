@@ -25,8 +25,6 @@ Partial Class frmDatosCV
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
@@ -110,8 +108,10 @@ Partial Class frmDatosCV
         Me.Label34 = New System.Windows.Forms.Label()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.btnSalir = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
         Me.Button9 = New System.Windows.Forms.Button()
+        Me.ComboBox11 = New System.Windows.Forms.ComboBox()
+        Me.DateTimePicker8 = New System.Windows.Forms.DateTimePicker()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -144,9 +144,9 @@ Partial Class frmDatosCV
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.DateTimePicker8)
+        Me.TabPage1.Controls.Add(Me.ComboBox11)
         Me.TabPage1.Controls.Add(Me.ComboBox1)
-        Me.TabPage1.Controls.Add(Me.TextBox7)
-        Me.TabPage1.Controls.Add(Me.TextBox6)
         Me.TabPage1.Controls.Add(Me.TextBox4)
         Me.TabPage1.Controls.Add(Me.TextBox3)
         Me.TabPage1.Controls.Add(Me.TextBox2)
@@ -174,20 +174,6 @@ Partial Class frmDatosCV
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(132, 21)
         Me.ComboBox1.TabIndex = 15
-        '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(148, 233)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(133, 20)
-        Me.TextBox7.TabIndex = 14
-        '
-        'TextBox6
-        '
-        Me.TextBox6.Location = New System.Drawing.Point(148, 198)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(266, 20)
-        Me.TextBox6.TabIndex = 13
         '
         'TextBox4
         '
@@ -940,35 +926,50 @@ Partial Class frmDatosCV
         Me.btnSalir.Name = "btnSalir"
         Me.btnSalir.Size = New System.Drawing.Size(75, 23)
         Me.btnSalir.TabIndex = 4
-        Me.btnSalir.Text = "Salir"
+        Me.btnSalir.Text = "Cancelar"
         Me.btnSalir.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(477, 409)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Imprimir CV"
-        Me.Button4.UseVisualStyleBackColor = True
         '
         'Button9
         '
-        Me.Button9.Location = New System.Drawing.Point(367, 409)
+        Me.Button9.Location = New System.Drawing.Point(468, 409)
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(75, 23)
         Me.Button9.TabIndex = 69
-        Me.Button9.Text = "Guardar"
+        Me.Button9.Text = "Aceptar"
         Me.Button9.UseVisualStyleBackColor = True
+        '
+        'ComboBox11
+        '
+        Me.ComboBox11.FormattingEnabled = True
+        Me.ComboBox11.Location = New System.Drawing.Point(148, 199)
+        Me.ComboBox11.Name = "ComboBox11"
+        Me.ComboBox11.Size = New System.Drawing.Size(266, 21)
+        Me.ComboBox11.TabIndex = 16
+        '
+        'DateTimePicker8
+        '
+        Me.DateTimePicker8.Location = New System.Drawing.Point(148, 234)
+        Me.DateTimePicker8.Name = "DateTimePicker8"
+        Me.DateTimePicker8.Size = New System.Drawing.Size(133, 20)
+        Me.DateTimePicker8.TabIndex = 17
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(322, 409)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(104, 23)
+        Me.Button4.TabIndex = 70
+        Me.Button4.Text = "Imprimir Curriculum"
+        Me.Button4.UseVisualStyleBackColor = True
         '
         'frmDatosCV
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(674, 444)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button9)
         Me.Controls.Add(Me.btnSalir)
-        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "frmDatosCV"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -1006,10 +1007,7 @@ Partial Class frmDatosCV
     Friend WithEvents TabPage6 As TabPage
     Friend WithEvents TabPage7 As TabPage
     Friend WithEvents btnSalir As Button
-    Friend WithEvents Button4 As Button
     Friend WithEvents Button1 As Button
-    Friend WithEvents TextBox7 As TextBox
-    Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox2 As TextBox
@@ -1087,4 +1085,7 @@ Partial Class frmDatosCV
     Friend WithEvents TextBox17 As TextBox
     Friend WithEvents Button7 As Button
     Friend WithEvents Button9 As Button
+    Friend WithEvents ComboBox11 As ComboBox
+    Friend WithEvents DateTimePicker8 As DateTimePicker
+    Friend WithEvents Button4 As Button
 End Class
