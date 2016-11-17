@@ -19,11 +19,11 @@
 
     End Sub
 
-    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+    Private Sub Label8_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -56,6 +56,18 @@
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+
+    End Sub
+
+    Private Sub TabPage4_Click(sender As Object, e As EventArgs) Handles TabPage4.Click
+
+    End Sub
+
+    Private Sub DataGridView3_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView3.CellContentClick
+
+    End Sub
+
+    Private Sub TabPage7_Click(sender As Object, e As EventArgs) Handles TabPage7.Click
 
     End Sub
 End Class
