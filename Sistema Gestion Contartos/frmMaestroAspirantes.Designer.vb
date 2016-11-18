@@ -70,12 +70,12 @@ Partial Class frmMaestroAspirantes
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(20, 75)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(622, 164)
+        Me.DataGridView1.Size = New System.Drawing.Size(622, 71)
         Me.DataGridView1.TabIndex = 4
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(567, 259)
+        Me.Button3.Location = New System.Drawing.Point(554, 220)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 3
@@ -84,7 +84,7 @@ Partial Class frmMaestroAspirantes
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(466, 259)
+        Me.Button2.Location = New System.Drawing.Point(473, 220)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 2
@@ -93,7 +93,7 @@ Partial Class frmMaestroAspirantes
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(365, 259)
+        Me.btnNuevo.Location = New System.Drawing.Point(392, 220)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
         Me.btnNuevo.TabIndex = 1
