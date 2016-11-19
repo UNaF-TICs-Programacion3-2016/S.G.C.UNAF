@@ -1,26 +1,20 @@
 ﻿Public Class Persona
-    Public Dom As New List(Of Domicilio)
-    Public Sub AgregarDomicilio(ObjDomicilio As Domicilio)
-        Dom.Add(ObjDomicilio)
-    End Sub
+    'Public Dom As New List(Of Domicilio)
+    'Public Sub AgregarDomicilio(ObjDomicilio As Domicilio)
+    '    Dom.Add(ObjDomicilio)
+    'End Sub
 
-    Private vIdPersona As Integer
     Private vApellido As String
     Private vNombre As String
     Private vDni As Long
     Private vCuil As String
     Private vNacionalidad As String
-    Private vRelaLocalidad As String
+    Private vLugarNac As String
     Private vFechaNac As Date
-
-    Public Property IdPersona As Integer
-        Get
-            Return vIdPersona
-        End Get
-        Set(value As Integer)
-            vIdPersona = value
-        End Set
-    End Property
+    Private vDireccion As String
+    Private vTelefono As String
+    Private vCelular As String
+    Private vEmail As String
 
     Public Property Apellido As String
         Get
@@ -58,25 +52,23 @@
         End Set
     End Property
 
-    Public Property RelaNacionalidad As Integer
+    Public Property Nacionalidad As String
         Get
             Return vNacionalidad
         End Get
-        Set(value As Integer)
+        Set(value As String)
             vNacionalidad = value
         End Set
     End Property
 
-
-    Public Property RelaLocalidad As Integer
+    Public Property LugarNac As String
         Get
-            Return vRelaLocalidad
+            Return vLugarNac
         End Get
-        Set(value As Integer)
-            vRelaLocalidad = value
+        Set(value As String)
+            vLugarNac = value
         End Set
     End Property
-
 
     Public Property FechaNac As Date
         Get
@@ -87,53 +79,41 @@
         End Set
     End Property
 
-
-
-End Class
-
-Public Class Domicilio
-    Private vIdDomicilio As Integer
-    Private vCalle As String
-    Private vAltura As Integer
-    Private vRelaBarrio As Integer
-
-    Public Property IdDomicilio As Integer
+    Public Property Direccion As String
         Get
-            Return vIdDomicilio
-        End Get
-        Set(value As Integer)
-            vIdDomicilio = value
-        End Set
-    End Property
-
-    Public Property Calle As String
-        Get
-            Return vCalle
+            Return vDireccion
         End Get
         Set(value As String)
-            vCalle = value
+            vDireccion = value
         End Set
     End Property
 
-    Public Property Altura As Integer
+    Public Property Telefono As String
         Get
-            Return vAltura
+            Return vTelefono
         End Get
-        Set(value As Integer)
-            vAltura = value
+        Set(value As String)
+            vTelefono = value
         End Set
     End Property
 
-
-    Public Property RelaBarrio As Integer
+    Public Property Celular As String
         Get
-            Return vRelaBarrio
+            Return vCelular
         End Get
-        Set(value As Integer)
-            vRelaBarrio = value
+        Set(value As String)
+            vCelular = value
         End Set
     End Property
 
-
+    Public Property Email As String
+        Get
+            Return vEmail
+        End Get
+        Set(value As String)
+            vEmail = value
+        End Set
+    End Property
 
 End Class
+
