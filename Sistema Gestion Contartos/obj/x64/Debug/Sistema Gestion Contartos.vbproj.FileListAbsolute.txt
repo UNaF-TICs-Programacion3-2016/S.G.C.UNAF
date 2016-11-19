@@ -1,0 +1,22 @@
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.exe.config
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.exe
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.pdb
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.xml
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\bin\x64\Debug\Oracle.DataAccess.dll
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMenu.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosAspirantes.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosContratos.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosCV.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosDictamenes.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroAspirantes.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroContratos.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroCV.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroDictamenes.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.Resources.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.vbproj.GenerateResource.Cache
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.exe
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.xml
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.pdb
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.vbprojResolveAssemblyReference.cache
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosPersonas.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroPersonas.resources

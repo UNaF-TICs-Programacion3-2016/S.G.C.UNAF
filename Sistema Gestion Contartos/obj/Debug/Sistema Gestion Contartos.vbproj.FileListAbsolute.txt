@@ -30,3 +30,4 @@ C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\Debug\
 C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\Debug\Sistema_Gestion_Contartos.frmMaestroDictamenes.resources
 C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\Debug\Sistema_Gestion_Contartos.frmMaestroContratos.resources
 C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\Debug\Sistema_Gestion_Contartos.frmDatosContratos.resources
+C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\bin\Debug\Oracle.DataAccess.dll

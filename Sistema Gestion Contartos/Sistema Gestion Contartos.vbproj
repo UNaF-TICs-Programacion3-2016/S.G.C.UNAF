@@ -46,7 +46,31 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Sistema Gestion Contartos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Sistema Gestion Contartos.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -72,6 +96,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BD.vb" />
+    <Compile Include="CV.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +129,12 @@
     <Compile Include="frmDatosDictamenes.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmDatosPersonas.Designer.vb">
+      <DependentUpon>frmDatosPersonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatosPersonas.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMaestroAspirantes.Designer.vb">
       <DependentUpon>frmMaestroAspirantes.vb</DependentUpon>
     </Compile>
@@ -125,6 +157,12 @@
       <DependentUpon>frmMaestroDictamenes.vb</DependentUpon>
     </Compile>
     <Compile Include="frmMaestroDictamenes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaestroPersonas.Designer.vb">
+      <DependentUpon>frmMaestroPersonas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaestroPersonas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -159,6 +197,9 @@
     <EmbeddedResource Include="frmDatosDictamenes.resx">
       <DependentUpon>frmDatosDictamenes.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmDatosPersonas.resx">
+      <DependentUpon>frmDatosPersonas.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMaestroAspirantes.resx">
       <DependentUpon>frmMaestroAspirantes.vb</DependentUpon>
     </EmbeddedResource>
@@ -170,6 +211,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMaestroDictamenes.resx">
       <DependentUpon>frmMaestroDictamenes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaestroPersonas.resx">
+      <DependentUpon>frmMaestroPersonas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -192,6 +236,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\unaf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\add-user-2-32.gif" />
+    <None Include="Resources\exit32.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\pers32.png" />
+    <None Include="Resources\curriculum32.png" />
+    <None Include="Resources\curricu.png" />
+    <None Include="Resources\contatro32.png" />
+    <None Include="Resources\dictamen32.png" />
+    <None Include="Resources\asignaciones32.png" />
+    <None Include="Resources\User32.png" />
+    <None Include="Resources\curri.png" />
+    <None Include="Resources\curriculum.png" />
+    <None Include="Resources\cv.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

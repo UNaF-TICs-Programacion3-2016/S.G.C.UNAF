@@ -23,108 +23,95 @@ Partial Class frmMenu
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.PersonasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CurriculumVitaeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoCVToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AspirantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AsignarMateriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DictamenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoDictamenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ContratosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoContratoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DictamenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ContratosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CurriculumVitaeToolStripMenuItem, Me.AspirantesToolStripMenuItem, Me.ToolStripMenuItem1, Me.DictamenesToolStripMenuItem, Me.ToolStripMenuItem2, Me.ContratosToolStripMenuItem, Me.SalirToolStripMenuItem})
+        Me.MenuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PersonasToolStripMenuItem, Me.CurriculumVitaeToolStripMenuItem, Me.AspirantesToolStripMenuItem, Me.ToolStripMenuItem1, Me.DictamenesToolStripMenuItem, Me.ToolStripMenuItem2, Me.ContratosToolStripMenuItem, Me.SalirToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(976, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(976, 40)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
+        'PersonasToolStripMenuItem
+        '
+        Me.PersonasToolStripMenuItem.Image = Global.Sistema_Gestion_Contartos.My.Resources.Resources.pers32
+        Me.PersonasToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.PersonasToolStripMenuItem.Name = "PersonasToolStripMenuItem"
+        Me.PersonasToolStripMenuItem.Size = New System.Drawing.Size(98, 36)
+        Me.PersonasToolStripMenuItem.Text = "Personas"
+        '
         'CurriculumVitaeToolStripMenuItem
         '
-        Me.CurriculumVitaeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoCVToolStripMenuItem})
+        Me.CurriculumVitaeToolStripMenuItem.Image = Global.Sistema_Gestion_Contartos.My.Resources.Resources.curriculum32
+        Me.CurriculumVitaeToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.CurriculumVitaeToolStripMenuItem.Name = "CurriculumVitaeToolStripMenuItem"
-        Me.CurriculumVitaeToolStripMenuItem.Size = New System.Drawing.Size(108, 20)
+        Me.CurriculumVitaeToolStripMenuItem.Size = New System.Drawing.Size(140, 36)
         Me.CurriculumVitaeToolStripMenuItem.Text = "Curriculum Vitae"
-        '
-        'NuevoCVToolStripMenuItem
-        '
-        Me.NuevoCVToolStripMenuItem.Name = "NuevoCVToolStripMenuItem"
-        Me.NuevoCVToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
-        Me.NuevoCVToolStripMenuItem.Text = "Nuevo CV"
         '
         'AspirantesToolStripMenuItem
         '
-        Me.AspirantesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsignarMateriaToolStripMenuItem})
+        Me.AspirantesToolStripMenuItem.Image = Global.Sistema_Gestion_Contartos.My.Resources.Resources.asignaciones32
+        Me.AspirantesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.AspirantesToolStripMenuItem.Name = "AspirantesToolStripMenuItem"
-        Me.AspirantesToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
-        Me.AspirantesToolStripMenuItem.Text = "Aspirantes"
-        '
-        'AsignarMateriaToolStripMenuItem
-        '
-        Me.AsignarMateriaToolStripMenuItem.Name = "AsignarMateriaToolStripMenuItem"
-        Me.AsignarMateriaToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.AsignarMateriaToolStripMenuItem.Text = "Asignar Materia"
+        Me.AspirantesToolStripMenuItem.Size = New System.Drawing.Size(121, 36)
+        Me.AspirantesToolStripMenuItem.Text = "Asignaciones"
         '
         'ToolStripMenuItem1
         '
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
-        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(12, 20)
-        '
-        'DictamenesToolStripMenuItem
-        '
-        Me.DictamenesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoDictamenToolStripMenuItem})
-        Me.DictamenesToolStripMenuItem.Name = "DictamenesToolStripMenuItem"
-        Me.DictamenesToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
-        Me.DictamenesToolStripMenuItem.Text = "Dictamenes"
-        '
-        'NuevoDictamenToolStripMenuItem
-        '
-        Me.NuevoDictamenToolStripMenuItem.Name = "NuevoDictamenToolStripMenuItem"
-        Me.NuevoDictamenToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
-        Me.NuevoDictamenToolStripMenuItem.Text = "Nuevo Dictamen"
+        Me.ToolStripMenuItem1.Size = New System.Drawing.Size(12, 36)
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(12, 20)
-        '
-        'ContratosToolStripMenuItem
-        '
-        Me.ContratosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoContratoToolStripMenuItem})
-        Me.ContratosToolStripMenuItem.Name = "ContratosToolStripMenuItem"
-        Me.ContratosToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
-        Me.ContratosToolStripMenuItem.Text = "Contratos"
-        '
-        'NuevoContratoToolStripMenuItem
-        '
-        Me.NuevoContratoToolStripMenuItem.Name = "NuevoContratoToolStripMenuItem"
-        Me.NuevoContratoToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
-        Me.NuevoContratoToolStripMenuItem.Text = "Nuevo Contrato"
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(12, 36)
         '
         'SalirToolStripMenuItem
         '
+        Me.SalirToolStripMenuItem.Image = Global.Sistema_Gestion_Contartos.My.Resources.Resources.exit32
+        Me.SalirToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(41, 20)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(73, 36)
         Me.SalirToolStripMenuItem.Text = "Salir"
+        '
+        'DictamenesToolStripMenuItem
+        '
+        Me.DictamenesToolStripMenuItem.Image = Global.Sistema_Gestion_Contartos.My.Resources.Resources.dictamen32
+        Me.DictamenesToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.DictamenesToolStripMenuItem.Name = "DictamenesToolStripMenuItem"
+        Me.DictamenesToolStripMenuItem.Size = New System.Drawing.Size(113, 36)
+        Me.DictamenesToolStripMenuItem.Text = "Dictamenes"
+        '
+        'ContratosToolStripMenuItem
+        '
+        Me.ContratosToolStripMenuItem.Image = Global.Sistema_Gestion_Contartos.My.Resources.Resources.contatro32
+        Me.ContratosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None
+        Me.ContratosToolStripMenuItem.Name = "ContratosToolStripMenuItem"
+        Me.ContratosToolStripMenuItem.Size = New System.Drawing.Size(103, 36)
+        Me.ContratosToolStripMenuItem.Text = "Contratos"
         '
         'frmMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.White
-        Me.BackgroundImage = Global.Sistema_Gestion_Contartos.My.Resources.Resources.unaf
+        Me.BackColor = System.Drawing.Color.Gainsboro
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.ClientSize = New System.Drawing.Size(976, 475)
         Me.Controls.Add(Me.MenuStrip1)
         Me.Name = "frmMenu"
-        Me.Text = "Sistema Gestion Contratos"
+        Me.Text = "Sistema Gestion Contratos Docentes Universitarios"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
@@ -135,14 +122,11 @@ Partial Class frmMenu
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents CurriculumVitaeToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NuevoCVToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AspirantesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AsignarMateriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents DictamenesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NuevoDictamenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
-    Friend WithEvents ContratosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NuevoContratoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PersonasToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents DictamenesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ContratosToolStripMenuItem As ToolStripMenuItem
 End Class
