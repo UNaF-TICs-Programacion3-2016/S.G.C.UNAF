@@ -96,7 +96,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BD.vb" />
     <Compile Include="CV.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
