@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class frmDatosPersonas
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,9 +20,11 @@ Partial Class frmDatosPersonas
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.txtNacionlidad = New System.Windows.Forms.TextBox()
+        Me.txtLugNac = New System.Windows.Forms.TextBox()
         Me.txtCelular = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.txtTelefono = New System.Windows.Forms.TextBox()
@@ -45,9 +47,21 @@ Partial Class frmDatosPersonas
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnAceptar = New System.Windows.Forms.Button()
         Me.btnCancelar = New System.Windows.Forms.Button()
-        Me.txtLugNac = New System.Windows.Forms.TextBox()
-        Me.txtNacionlidad = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnModificar = New System.Windows.Forms.Button()
+        Me.btnNuevo = New System.Windows.Forms.Button()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.dgvPersonas = New System.Windows.Forms.DataGridView()
         Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        CType(Me.dgvPersonas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -74,23 +88,37 @@ Partial Class frmDatosPersonas
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(13, 221)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(826, 291)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
+        'txtNacionlidad
+        '
+        Me.txtNacionlidad.Location = New System.Drawing.Point(124, 135)
+        Me.txtNacionlidad.Name = "txtNacionlidad"
+        Me.txtNacionlidad.Size = New System.Drawing.Size(133, 20)
+        Me.txtNacionlidad.TabIndex = 7
+        '
+        'txtLugNac
+        '
+        Me.txtLugNac.Location = New System.Drawing.Point(123, 96)
+        Me.txtLugNac.Name = "txtLugNac"
+        Me.txtLugNac.Size = New System.Drawing.Size(266, 20)
+        Me.txtLugNac.TabIndex = 5
+        '
         'txtCelular
         '
-        Me.txtCelular.Location = New System.Drawing.Point(551, 214)
+        Me.txtCelular.Location = New System.Drawing.Point(540, 214)
         Me.txtCelular.Name = "txtCelular"
-        Me.txtCelular.Size = New System.Drawing.Size(133, 20)
+        Me.txtCelular.Size = New System.Drawing.Size(141, 20)
         Me.txtCelular.TabIndex = 10
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(442, 221)
+        Me.Label11.Location = New System.Drawing.Point(431, 221)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(39, 13)
         Me.Label11.TabIndex = 68
@@ -98,7 +126,7 @@ Partial Class frmDatosPersonas
         '
         'txtTelefono
         '
-        Me.txtTelefono.Location = New System.Drawing.Point(130, 214)
+        Me.txtTelefono.Location = New System.Drawing.Point(123, 214)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(133, 20)
         Me.txtTelefono.TabIndex = 9
@@ -114,7 +142,7 @@ Partial Class frmDatosPersonas
         '
         'txtEmail
         '
-        Me.txtEmail.Location = New System.Drawing.Point(131, 253)
+        Me.txtEmail.Location = New System.Drawing.Point(124, 253)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(266, 20)
         Me.txtEmail.TabIndex = 11
@@ -130,35 +158,35 @@ Partial Class frmDatosPersonas
         '
         'txtDireccion
         '
-        Me.txtDireccion.Location = New System.Drawing.Point(130, 175)
+        Me.txtDireccion.Location = New System.Drawing.Point(123, 175)
         Me.txtDireccion.Name = "txtDireccion"
         Me.txtDireccion.Size = New System.Drawing.Size(266, 20)
         Me.txtDireccion.TabIndex = 8
         '
         'txtCuil
         '
-        Me.txtCuil.Location = New System.Drawing.Point(549, 59)
+        Me.txtCuil.Location = New System.Drawing.Point(540, 57)
         Me.txtCuil.Name = "txtCuil"
-        Me.txtCuil.Size = New System.Drawing.Size(133, 20)
+        Me.txtCuil.Size = New System.Drawing.Size(141, 20)
         Me.txtCuil.TabIndex = 4
         '
         'txtDni
         '
-        Me.txtDni.Location = New System.Drawing.Point(129, 57)
+        Me.txtDni.Location = New System.Drawing.Point(122, 57)
         Me.txtDni.Name = "txtDni"
         Me.txtDni.Size = New System.Drawing.Size(133, 20)
         Me.txtDni.TabIndex = 3
         '
         'txtNombre
         '
-        Me.txtNombre.Location = New System.Drawing.Point(549, 19)
+        Me.txtNombre.Location = New System.Drawing.Point(538, 19)
         Me.txtNombre.Name = "txtNombre"
-        Me.txtNombre.Size = New System.Drawing.Size(266, 20)
+        Me.txtNombre.Size = New System.Drawing.Size(277, 20)
         Me.txtNombre.TabIndex = 2
         '
         'txtApellido
         '
-        Me.txtApellido.Location = New System.Drawing.Point(129, 19)
+        Me.txtApellido.Location = New System.Drawing.Point(122, 19)
         Me.txtApellido.Name = "txtApellido"
         Me.txtApellido.Size = New System.Drawing.Size(266, 20)
         Me.txtApellido.TabIndex = 1
@@ -174,15 +202,16 @@ Partial Class frmDatosPersonas
         '
         'dtpFechaNac
         '
-        Me.dtpFechaNac.Location = New System.Drawing.Point(549, 98)
+        Me.dtpFechaNac.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaNac.Location = New System.Drawing.Point(538, 98)
         Me.dtpFechaNac.Name = "dtpFechaNac"
-        Me.dtpFechaNac.Size = New System.Drawing.Size(266, 20)
+        Me.dtpFechaNac.Size = New System.Drawing.Size(277, 20)
         Me.dtpFechaNac.TabIndex = 6
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(442, 104)
+        Me.Label7.Location = New System.Drawing.Point(431, 104)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(93, 13)
         Me.Label7.TabIndex = 50
@@ -209,7 +238,7 @@ Partial Class frmDatosPersonas
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(442, 66)
+        Me.Label6.Location = New System.Drawing.Point(431, 66)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(61, 13)
         Me.Label6.TabIndex = 47
@@ -227,7 +256,7 @@ Partial Class frmDatosPersonas
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(440, 22)
+        Me.Label2.Location = New System.Drawing.Point(429, 22)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(44, 13)
         Me.Label2.TabIndex = 45
@@ -244,41 +273,133 @@ Partial Class frmDatosPersonas
         '
         'btnAceptar
         '
-        Me.btnAceptar.Location = New System.Drawing.Point(658, 321)
+        Me.btnAceptar.Location = New System.Drawing.Point(651, 529)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
         Me.btnAceptar.TabIndex = 12
-        Me.btnAceptar.Text = "Aceptar"
+        Me.btnAceptar.Text = "Guardar"
         Me.btnAceptar.UseVisualStyleBackColor = True
         '
         'btnCancelar
         '
-        Me.btnCancelar.Location = New System.Drawing.Point(763, 321)
+        Me.btnCancelar.Location = New System.Drawing.Point(763, 528)
         Me.btnCancelar.Name = "btnCancelar"
         Me.btnCancelar.Size = New System.Drawing.Size(75, 23)
         Me.btnCancelar.TabIndex = 13
-        Me.btnCancelar.Text = "Cancelar"
+        Me.btnCancelar.Text = "Salir"
         Me.btnCancelar.UseVisualStyleBackColor = True
         '
-        'txtLugNac
+        'Label8
         '
-        Me.txtLugNac.Location = New System.Drawing.Point(130, 96)
-        Me.txtLugNac.Name = "txtLugNac"
-        Me.txtLugNac.Size = New System.Drawing.Size(266, 20)
-        Me.txtLugNac.TabIndex = 5
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 22)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(44, 13)
+        Me.Label8.TabIndex = 71
+        Me.Label8.Text = "Nombre"
         '
-        'txtNacionlidad
+        'GroupBox2
         '
-        Me.txtNacionlidad.Location = New System.Drawing.Point(131, 135)
-        Me.txtNacionlidad.Name = "txtNacionlidad"
-        Me.txtNacionlidad.Size = New System.Drawing.Size(133, 20)
-        Me.txtNacionlidad.TabIndex = 7
+        Me.GroupBox2.Controls.Add(Me.ComboBox1)
+        Me.GroupBox2.Controls.Add(Me.btnEliminar)
+        Me.GroupBox2.Controls.Add(Me.btnModificar)
+        Me.GroupBox2.Controls.Add(Me.btnNuevo)
+        Me.GroupBox2.Controls.Add(Me.Label8)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(826, 53)
+        Me.GroupBox2.TabIndex = 73
+        Me.GroupBox2.TabStop = False
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Location = New System.Drawing.Point(122, 14)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(266, 21)
+        Me.ComboBox1.TabIndex = 94
+        '
+        'btnEliminar
+        '
+        Me.btnEliminar.Location = New System.Drawing.Point(740, 12)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminar.TabIndex = 93
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'btnModificar
+        '
+        Me.btnModificar.Location = New System.Drawing.Point(639, 12)
+        Me.btnModificar.Name = "btnModificar"
+        Me.btnModificar.Size = New System.Drawing.Size(75, 23)
+        Me.btnModificar.TabIndex = 92
+        Me.btnModificar.Text = "Modificar"
+        Me.btnModificar.UseVisualStyleBackColor = True
+        '
+        'btnNuevo
+        '
+        Me.btnNuevo.Location = New System.Drawing.Point(538, 12)
+        Me.btnNuevo.Name = "btnNuevo"
+        Me.btnNuevo.Size = New System.Drawing.Size(75, 23)
+        Me.btnNuevo.TabIndex = 91
+        Me.btnNuevo.Text = "Nuevo"
+        Me.btnNuevo.UseVisualStyleBackColor = True
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Button3)
+        Me.GroupBox3.Controls.Add(Me.Button2)
+        Me.GroupBox3.Controls.Add(Me.Button1)
+        Me.GroupBox3.Controls.Add(Me.dgvPersonas)
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 12)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(826, 185)
+        Me.GroupBox3.TabIndex = 73
+        Me.GroupBox3.TabStop = False
+        '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(740, 139)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 97
+        Me.Button3.Text = "Eliminar"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(740, 69)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 96
+        Me.Button2.Text = "Modificar"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(740, 22)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 95
+        Me.Button1.Text = "Nuevo"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'dgvPersonas
+        '
+        Me.dgvPersonas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPersonas.Location = New System.Drawing.Point(10, 19)
+        Me.dgvPersonas.Name = "dgvPersonas"
+        Me.dgvPersonas.Size = New System.Drawing.Size(704, 143)
+        Me.dgvPersonas.TabIndex = 94
         '
         'frmDatosPersonas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(851, 366)
+        Me.ClientSize = New System.Drawing.Size(851, 561)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.btnAceptar)
         Me.Controls.Add(Me.btnCancelar)
         Me.Controls.Add(Me.GroupBox1)
@@ -287,6 +408,10 @@ Partial Class frmDatosPersonas
         Me.Text = "Datos Personas"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        CType(Me.dgvPersonas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -316,4 +441,15 @@ Partial Class frmDatosPersonas
     Friend WithEvents btnCancelar As Button
     Friend WithEvents txtNacionlidad As TextBox
     Friend WithEvents txtLugNac As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnModificar As Button
+    Friend WithEvents btnNuevo As Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents dgvPersonas As DataGridView
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button1 As Button
 End Class

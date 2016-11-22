@@ -1,9 +1,5 @@
-﻿Public Class Persona
-    'Public Dom As New List(Of Domicilio)
-    'Public Sub AgregarDomicilio(ObjDomicilio As Domicilio)
-    '    Dom.Add(ObjDomicilio)
-    'End Sub
-
+﻿Imports System.Data
+Public Class Persona
     Private vApellido As String
     Private vNombre As String
     Private vDni As Long
@@ -15,6 +11,18 @@
     Private vTelefono As String
     Private vCelular As String
     Private vEmail As String
+    Private vid As Long
+    Private obd As New BD
+    Private dt As DataTable
+
+    Public Sub New()
+
+    End Sub
+    Public Sub New(ByVal id As String)
+        vid = id
+        dt = obd.ObtenerDatosDesdeSQL("select * from mpersonas where id_mpersonas = " & id)
+    End Sub
+
 
     Public Property Apellido As String
         Get
@@ -115,5 +123,37 @@
         End Set
     End Property
 
+    Public Function ConsultarTitulos() As DataTable
+        Dim dt As DataTable
+        dt = obd.ObtenerDatosDesdeSQL("select descripcion,tipo,universidad ,desde,hasta from  mtitulopersona,mtitulos where rela_titulo = id_MtituloS and rela_persona  = " & vid)
+        Return dt
+    End Function
+
+    Public Function ConsultarAntecedentes() As DataTable '
+        Dim dt As DataTable
+        dt = obd.ObtenerDatosDesdeSQL("select desde,hasta,organizacion,tipo,cargo, descripcion from  mantpers, MANTECEDENTES_LAB where relaantlab = id_Antecedente_lab and relapersona  = " & vid)
+        Return dt
+    End Function
+
+    Public Sub Agregartitulo(ByVal titulo As Titulo, ByVal desde As Int16, ByVal hasta As Int16)
+        obd.Insertar("mtitulopersona", "rela_persona,rela_titulo,desde,hasta", vid.ToString & "," & titulo.id.ToString & "," & desde.ToString & "," & hasta.ToString)
+    End Sub
+
+    Public Sub AgregarAntLab(ByVal Ant As AntLab, ByVal desde As Int16, ByVal hasta As Int16, cargo As String, descripcion As String)
+        obd.Insertar("MANTPERS", "RELAPERSONA,RELAANTLAB,DESDE,HASTA,CARGO,DESCRIPCION", vid.ToString & "," & Ant.id.ToString & "," & desde.ToString & "," & hasta.ToString & "," & cargo & "," & descripcion)
+    End Sub
+
+    Public Function ConsultarPersonas() As DataTable
+        Return obd.ObtenerDatosDesdeSQL("select * from mpersonas")
+    End Function
+
+    Public Function ConsularDatosPersona() As DataTable '
+        Dim dt As DataTable
+        dt = obd.ObtenerDatosDesdeSQL("select * from  mpersonas where id_mpersonas  = " & vid)
+        Return dt
+    End Function
+
 End Class
+
+
 

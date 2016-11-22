@@ -5,21 +5,17 @@
 
     End Sub
 
-
-
-
-
     Private Sub SalirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SalirToolStripMenuItem.Click
         Close()
     End Sub
 
 
     Private Sub CurriculumVitaeToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CurriculumVitaeToolStripMenuItem.Click
-        frmMaestroCV.Show()
+        frmDatosCV.Show()
     End Sub
 
     Private Sub PersonasToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PersonasToolStripMenuItem.Click
-        frmMaestroPersonas.Show()
+        frmDatosPersonas.Show()
     End Sub
 
     Private Sub AspirantesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AspirantesToolStripMenuItem.Click

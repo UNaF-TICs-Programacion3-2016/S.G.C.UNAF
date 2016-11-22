@@ -96,7 +96,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CV.vb" />
+    <Compile Include="Consulta.vb" />
+    <Compile Include="AntLab.vb" />
+    <Compile Include="BD.vb" />
+    <Compile Include="ClaseCV.vb" />
+    <Compile Include="Publicacion.vb" />
+    <Compile Include="Titulo.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +184,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Persona.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">

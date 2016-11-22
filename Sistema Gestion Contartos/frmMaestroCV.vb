@@ -1,6 +1,6 @@
 ﻿
 Public Class frmMaestroCV
-    'Private oEntornoDB As New EntornoDB
+    Private oBD As New BD
     'Friend IdPersona As Integer
     'Friend Accion As TipoAccion
 
@@ -15,12 +15,19 @@ Public Class frmMaestroCV
     End Sub
 
     Private Sub frmMaestroCV_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'dgvPersonas.DataSource = oEntornoDB.ObtenerDatosDesdeSQL("SELECT ID_PERSONA, APELLIDO, NOMBRE, DNI, CUIL from MPERSONA")
+        CargarGrilla()
     End Sub
 
-
+    Sub CargarGrilla()
+        dgvPersonas.DataSource = oBD.ObtenerDatosDesdeSQL("SELECT * from MPERSONAS")
+        dgvPersonas.Columns(0).Visible = False
+    End Sub
 
     Private Sub dgvPersonas_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvPersonas.CellContentClick
         'MsgBox(dgvPersonas.CurrentRow.Cells("ID_PERSONA").Value)
+    End Sub
+
+    Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
+
     End Sub
 End Class

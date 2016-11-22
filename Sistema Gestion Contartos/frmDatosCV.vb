@@ -1,123 +1,99 @@
 ﻿Imports Oracle.DataAccess.Client
 
 Public Class frmDatosCV
-    Private Conexion As New OracleConnection("Data Source=localhost;
-                                        User Id=SYSTEM;
-                                        Password=123456;")
-    Private oPersona As New Persona
-    'Private oDomicilio As New Domicilio
-    'Private oEntornoDB As New EntornoDB
-    'Dim Adaptador As OracleDataAdapter
-    'Dim PersonaDS As New DataSet
-    'Dim Registro As DataRow
 
-    'Private Sub frmDatosCV_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    '    CargarComboLocalidad()
-    '    CargarComboNacionalidad()
-    '    CargarComboBarrio()
-
-    '    Adaptador = New OracleDataAdapter("Select * From MPERSONA Where ID_PERSONA = " + frmMaestroCV.IdPersona.ToString, Conexion)
-    '    If frmMaestroCV.Accion = TipoAccion.Alta Then
-    '        Registro = PersonaDS.Tables("Persona").NewRow()
-    '        Registro("ID_PERSONA") = -1
-    '    Else
-    '        Registro = PersonaDS.Tables("Persona").Rows.Item(0)
-    '    End If
+    Private Tabla As String
+    Private Campos As String
+    Private Valores As String
+    Private objPersona As Persona
 
 
-
-    'End Sub
-
-    'Sub TomarDatosDePantalla()
-
-    '    oPersona.Apellido = Registro("APELLIDO").ToString
-    '    oPersona.Nombre = Registro("NOMBRE").ToString
-    '    oPersona.Dni = Registro("DNI").ToString
-    '    oPersona.Cuil = Mid$(Registro("CUIL").ToString(), 3, 8)
-    '    oPersona.RelaNacionalidad = Registro("RELANACIONALIDAD")
-    '    oPersona.RelaLocalidad = Registro("RELALOCALIDAD")
-    '    dtpFechaNac.Value = IIf(IsDBNull(Registro("FECHANAC")), Date.Now, Registro("FECHANAC"))
-
-
-    'End Sub
-
-    'Sub CargarComboLocalidad()
-    '    cboLocalidad.DataSource = oEntornoDB.ObtenerDatosDesdeSQL("SELECT ID_LOCALIDAD, DESCRIPCION from MLOCALIDAD")
-    '    cboLocalidad.DisplayMember = "DESCRIPCION"
-    '    cboLocalidad.ValueMember = "ID_LOCALIDAD"
-    'End Sub
-
-    'Sub CargarComboNacionalidad()
-    '    cboNacionalidad.DataSource = oEntornoDB.ObtenerDatosDesdeSQL("SELECT ID_NACIONALIDAD, DESCRIPCION from MNACIONALIDAD")
-    '    cboNacionalidad.DisplayMember = "DESCRIPCION"
-    '    cboNacionalidad.ValueMember = "ID_NACIONALIDAD"
-    'End Sub
-
-    'Sub CargarComboBarrio()
-    '    cboBarrio.DataSource = oEntornoDB.ObtenerDatosDesdeSQL("SELECT ID_BARRIO, DESCRIPCION from MBARRIO")
-    '    cboBarrio.DisplayMember = "DESCRIPCION"
-    '    cboBarrio.ValueMember = "ID_BARRIO"
-    'End Sub
-
-
-
-    'Private Sub btnSiguiente_Click(sender As Object, e As EventArgs) Handles btnSiguiente.Click
-    '    With oPersona
-    '        .Apellido = txtApellido.Text
-    '        .Nombre = txtNombre.Text
-    '        .Dni = txtDni.Text
-    '        .Cuil = txtCuil.Text
-    '        .RelaNacionalidad = cboNacionalidad.SelectedValue
-    '        .RelaLocalidad = cboLocalidad.SelectedValue
-    '        .FechaNac = dtpFechaNac.Value
-    '    End With
-
-    '    With oDomicilio
-    '        .Calle = txtCalle.Text
-    '        .Altura = txtAltura.Text
-    '        .RelaBarrio = cboBarrio.SelectedValue
-    '    End With
-
-    '    oPersona.AgregarDomicilio(oDomicilio)
-
-    '    TabControl1.SelectedIndex = 1
-    'End Sub
+    Public Overloads Sub show(ByVal id As Long)
+        objPersona = New Persona(id)
+    End Sub    
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
+        Dim NuevoTitulo As New Titulo(Me.cmbtitulos.SelectedValue) 'IDTITULO
+        objPersona.Agregartitulo(NuevoTitulo, Me.txtDesde.Text, Me.txtHasta.Text)
+        CargarTitulosPersonas() 'carga los titulos de la persona en la grilla
+    End Sub
+
+    Private Sub btnAceptarAnt_Click(sender As Object, e As EventArgs) Handles btnAceptarAnt.Click
+        Dim NuevoAntLab As New AntLab(Me.cboOrganizacion.SelectedValue) 'REla
+        objPersona.AgregarAntLab(NuevoAntLab, Me.txtDesdeAnt.Text, Me.txtHastaAnt.Text, Me.txtCargo.Text, Me.txtDescripcion.Text)
+        CargarAntecedentesPersonas() 'carga los titulos de la persona en la grilla
+    End Sub
+
+    Private Sub CargarPersonas()
+        cmbPersona.DataSource = Consulta.ConsultarPersonas
+        cmbPersona.ValueMember = "id_mpersonas"
+        cmbPersona.DisplayMember = "apellido"
+    End Sub
+
+    Private Sub CargarOrganizaciones()
+        Me.cboOrganizacion.DataSource = Consulta.ConsultarTipoOrganizaciones()
+        Me.cboOrganizacion.ValueMember = "ID_ANTECEDENTE_LAB"
+        Me.cboOrganizacion.DisplayMember = "descripcion"
+    End Sub
+
+    Private Sub CargarTitulos()
+
+        If cmbPersona.SelectedValue = -1 Then Err.Raise("Seleccione una Persona")
+        Try
+            Me.cmbtitulos.DataSource = Consulta.consultartitulos
+            cmbtitulos.DisplayMember = "descripcion"
+            cmbtitulos.ValueMember = "id_MtituloS"
+        Catch ex As Exception
+        End Try
+
+
+
+    End Sub
+    Private Sub CargarTitulosPersonas()
+
+        If cmbPersona.SelectedValue = -1 Then Err.Raise("seleccione una persona")
+        Try
+            Me.dgvTitulos.DataSource = objPersona.consultartitulos()
+            Me.dgvTitulos.Refresh()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
 
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs)
+
+    Private Sub CargarAntecedentesPersonas()
+
+        If Me.cboOrganizacion.SelectedValue = -1 Then Err.Raise("seleccione una organizacion")
+        Try
+            Me.dgvAntLab.DataSource = objPersona.ConsultarAntecedentes()
+            Me.dgvAntLab.Refresh()
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btnAceptarAnt.Click
 
-    End Sub
+    Private Sub btnver_Click(sender As Object, e As EventArgs) Handles btnver.Click
 
-    Private Sub TabPage4_Click(sender As Object, e As EventArgs) Handles TabPage4.Click
+        objPersona = New Persona(Me.cmbPersona.SelectedValue)
 
-    End Sub
-
-    Private Sub dgvAntLab_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAntLab.CellContentClick
+        CargarTitulosPersonas()
+        CargarAntecedentesPersonas()
 
     End Sub
 
     Private Sub frmDatosCV_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        'CARGAR COMBOS
+        CargarPersonas()
+        CargarTitulos()
+        CargarOrganizaciones()
     End Sub
 
 
-
-    Private Sub btnCancelar_Click(sender As Object, e As EventArgs) Handles btnCancelar.Click
-
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Dispose()
     End Sub
 
-    Private Sub btnCancelarAnt_Click(sender As Object, e As EventArgs) Handles btnCancelarAnt.Click
-
-    End Sub
-
-    Private Sub btnCancelarPub_Click(sender As Object, e As EventArgs) Handles btnCancelarPub.Click
-
-    End Sub
 End Class
