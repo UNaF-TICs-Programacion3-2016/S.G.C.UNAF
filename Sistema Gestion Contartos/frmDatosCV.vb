@@ -8,9 +8,6 @@ Public Class frmDatosCV
     Private objPersona As Persona
 
 
-    Public Overloads Sub show(ByVal id As Long)
-        objPersona = New Persona(id)
-    End Sub    
 
     Private Sub btnAceptar_Click(sender As Object, e As EventArgs) Handles btnAceptar.Click
         Dim NuevoTitulo As New Titulo(Me.cmbtitulos.SelectedValue) 'IDTITULO

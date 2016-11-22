@@ -20,3 +20,47 @@ C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\De
 C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.vbprojResolveAssemblyReference.cache
 C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosPersonas.resources
 C:\Users\CaroL\Desktop\Repositorio 2Parcial\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroPersonas.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.exe.config
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.exe
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.xml
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.pdb
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.vbprojResolveAssemblyReference.cache
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMenu.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosAspirantes.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosContratos.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosCV.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosDictamenes.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosPersonas.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroAspirantes.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroContratos.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroCV.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroDictamenes.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroPersonas.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.Resources.resources
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.vbproj.GenerateResource.Cache
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.exe
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.pdb
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.xml
+E:\Dario\Documents\GITHUB repos\intefaz completa\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Oracle.DataAccess.dll
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.exe.config
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.exe
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.xml
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.pdb
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.vbprojResolveAssemblyReference.cache
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMenu.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosAspirantes.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosContratos.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosCV.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosDictamenes.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmDatosPersonas.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroAspirantes.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroContratos.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroCV.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroDictamenes.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.frmMaestroPersonas.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema_Gestion_Contartos.Resources.resources
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\obj\x64\Debug\Sistema Gestion Contartos.vbproj.GenerateResource.Cache
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.exe
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.pdb
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Sistema Gestion Contartos.xml
+C:\Users\CaroL\Desktop\hoy\S.G.C.UNAF-master\Sistema Gestion Contartos\bin\x64\Debug\Oracle.DataAccess.dll

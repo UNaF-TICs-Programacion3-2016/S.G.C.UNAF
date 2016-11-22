@@ -12,7 +12,7 @@ Public Class AntLab
 
     Public Sub New(ByVal id As String)
         vid = id
-        dt = obd.ObtenerDatosDesdeSQL("select * from mantecedentes_lab where id_antecedente_lab = " & id)
+        'dt = obd.ObtenerDatosDesdeSQL("select * from mantecedentes_lab where id_antecedente_lab = " & id)
     End Sub
 
 

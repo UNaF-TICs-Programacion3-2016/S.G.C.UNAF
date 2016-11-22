@@ -12,6 +12,7 @@ Public Class Persona
     Private vCelular As String
     Private vEmail As String
     Private vid As Long
+
     Private obd As New BD
     Private dt As DataTable
 
@@ -20,7 +21,7 @@ Public Class Persona
     End Sub
     Public Sub New(ByVal id As String)
         vid = id
-        dt = obd.ObtenerDatosDesdeSQL("select * from mpersonas where id_mpersonas = " & id)
+        ' dt = obd.ObtenerDatosDesdeSQL("select * from mpersonas where id_mpersonas = " & id)
     End Sub
 
 

@@ -11,7 +11,7 @@ Public Class Titulo
 
     Public Sub New(ByVal id As String)
         vid = id
-        dt = oBD.ObtenerDatosDesdeSQL("select * from mtitulos where id_MtituloS = " & id)
+        ' dt = oBD.ObtenerDatosDesdeSQL("select * from mtitulos where id_MtituloS = " & id)
     End Sub
 
     'Property Descripcion As String
