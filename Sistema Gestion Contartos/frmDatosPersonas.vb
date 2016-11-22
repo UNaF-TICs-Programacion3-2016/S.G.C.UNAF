@@ -7,13 +7,17 @@ Public Enum TipoAccion As Byte
 End Enum
 
 Public Class frmDatosPersonas
-    Private oPersona As New Persona
+    Private oPersona As Persona
     Private Conne As New BD
     Friend IdPersona As Integer
     Friend Accion As TipoAccion
     Dim Valores As String
     Dim Campos As String
     Dim Tabla As String
+
+    Public Overloads Sub show(ByVal id As Long)
+        oPersona = New Persona(id)
+    End Sub
 
     Private Sub CargarPersonas()
         dgvPersonas.DataSource = Consulta.ConsultarPersonasFull

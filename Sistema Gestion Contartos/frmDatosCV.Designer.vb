@@ -23,7 +23,6 @@ Partial Class frmDatosCV
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.btnAceptar = New System.Windows.Forms.Button()
-        Me.btnImprimir = New System.Windows.Forms.Button()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
         Me.cboOrganizacion = New System.Windows.Forms.ComboBox()
         Me.btnAceptarAnt = New System.Windows.Forms.Button()
@@ -51,6 +50,8 @@ Partial Class frmDatosCV
         Me.btnver = New System.Windows.Forms.Button()
         Me.cmbPersona = New System.Windows.Forms.ComboBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnEliminar = New System.Windows.Forms.Button()
+        Me.btnEliminarAnt = New System.Windows.Forms.Button()
         Me.TabPage5.SuspendLayout()
         CType(Me.dgvAntLab, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabPage4.SuspendLayout()
@@ -61,24 +62,16 @@ Partial Class frmDatosCV
         '
         'btnAceptar
         '
-        Me.btnAceptar.Location = New System.Drawing.Point(563, 97)
+        Me.btnAceptar.Location = New System.Drawing.Point(470, 95)
         Me.btnAceptar.Name = "btnAceptar"
         Me.btnAceptar.Size = New System.Drawing.Size(75, 23)
         Me.btnAceptar.TabIndex = 7
         Me.btnAceptar.Text = "Agregar"
         Me.btnAceptar.UseVisualStyleBackColor = True
         '
-        'btnImprimir
-        '
-        Me.btnImprimir.Location = New System.Drawing.Point(484, 437)
-        Me.btnImprimir.Name = "btnImprimir"
-        Me.btnImprimir.Size = New System.Drawing.Size(75, 23)
-        Me.btnImprimir.TabIndex = 24
-        Me.btnImprimir.Text = "Imprimir"
-        Me.btnImprimir.UseVisualStyleBackColor = True
-        '
         'TabPage5
         '
+        Me.TabPage5.Controls.Add(Me.btnEliminarAnt)
         Me.TabPage5.Controls.Add(Me.cboOrganizacion)
         Me.TabPage5.Controls.Add(Me.btnAceptarAnt)
         Me.TabPage5.Controls.Add(Me.txtDescripcion)
@@ -108,7 +101,7 @@ Partial Class frmDatosCV
         '
         'btnAceptarAnt
         '
-        Me.btnAceptarAnt.Location = New System.Drawing.Point(563, 297)
+        Me.btnAceptarAnt.Location = New System.Drawing.Point(470, 296)
         Me.btnAceptarAnt.Name = "btnAceptarAnt"
         Me.btnAceptarAnt.Size = New System.Drawing.Size(75, 23)
         Me.btnAceptarAnt.TabIndex = 17
@@ -198,6 +191,7 @@ Partial Class frmDatosCV
         '
         'TabPage4
         '
+        Me.TabPage4.Controls.Add(Me.btnEliminar)
         Me.TabPage4.Controls.Add(Me.cmbtitulos)
         Me.TabPage4.Controls.Add(Me.btnAceptar)
         Me.TabPage4.Controls.Add(Me.txtHasta)
@@ -326,6 +320,24 @@ Partial Class frmDatosCV
         Me.Label5.TabIndex = 71
         Me.Label5.Text = "Apellido y Nombre"
         '
+        'btnEliminar
+        '
+        Me.btnEliminar.Location = New System.Drawing.Point(563, 95)
+        Me.btnEliminar.Name = "btnEliminar"
+        Me.btnEliminar.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminar.TabIndex = 42
+        Me.btnEliminar.Text = "Eliminar"
+        Me.btnEliminar.UseVisualStyleBackColor = True
+        '
+        'btnEliminarAnt
+        '
+        Me.btnEliminarAnt.Location = New System.Drawing.Point(563, 296)
+        Me.btnEliminarAnt.Name = "btnEliminarAnt"
+        Me.btnEliminarAnt.Size = New System.Drawing.Size(75, 23)
+        Me.btnEliminarAnt.TabIndex = 75
+        Me.btnEliminarAnt.Text = "Eliminar"
+        Me.btnEliminarAnt.UseVisualStyleBackColor = True
+        '
         'frmDatosCV
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -333,7 +345,6 @@ Partial Class frmDatosCV
         Me.ClientSize = New System.Drawing.Size(686, 472)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.btnImprimir)
         Me.Controls.Add(Me.TabControl1)
         Me.Name = "frmDatosCV"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -351,7 +362,6 @@ Partial Class frmDatosCV
 
     End Sub
     Friend WithEvents btnAceptar As Button
-    Friend WithEvents btnImprimir As Button
     Friend WithEvents TabPage5 As TabPage
     Friend WithEvents Label27 As Label
     Friend WithEvents dgvAntLab As DataGridView
@@ -379,4 +389,6 @@ Partial Class frmDatosCV
     Friend WithEvents cmbPersona As ComboBox
     Friend WithEvents btnver As Button
     Friend WithEvents cboOrganizacion As ComboBox
+    Friend WithEvents btnEliminar As Button
+    Friend WithEvents btnEliminarAnt As Button
 End Class

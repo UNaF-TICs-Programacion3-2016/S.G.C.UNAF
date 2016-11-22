@@ -2,9 +2,9 @@
 Public Class AntLab
     Private vDesde As Integer
     Private vHasta As Integer
-    Private vOrganizacion As String
+    'Private vOrganizacion As String
     Private vCargo As String
-    Private vTipo As String
+    'Private vTipo As String
     Private vDescripcion As String
     Private vid As Long
     Private obd As New BD
@@ -34,14 +34,14 @@ Public Class AntLab
         End Set
     End Property
 
-    Property Organizacion As String
-        Get
-            Return vOrganizacion
-        End Get
-        Set(value As String)
-            vOrganizacion = value
-        End Set
-    End Property
+    'Property Organizacion As String
+    '    Get
+    '        Return vOrganizacion
+    '    End Get
+    '    Set(value As String)
+    '        vOrganizacion = value
+    '    End Set
+    'End Property
 
     Property Cargo As String
         Get
@@ -52,14 +52,14 @@ Public Class AntLab
         End Set
     End Property
 
-    Property Tipo As String
-        Get
-            Return vTipo
-        End Get
-        Set(value As String)
-            vTipo = value
-        End Set
-    End Property
+    'Property Tipo As String
+    '    Get
+    '        Return vTipo
+    '    End Get
+    '    Set(value As String)
+    '        vTipo = value
+    '    End Set
+    'End Property
 
     Property Descripcion As String
         Get
