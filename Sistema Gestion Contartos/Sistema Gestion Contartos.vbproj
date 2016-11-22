@@ -48,6 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="Oracle.DataAccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -76,6 +79,8 @@
   <ItemGroup>
     <Compile Include="ABMT.vb" />
     <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Asignacion.vb" />
+    <Compile Include="clasedictamen.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>

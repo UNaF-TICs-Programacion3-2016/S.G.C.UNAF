@@ -1,6 +1,5 @@
 ﻿Imports Oracle.DataAccess.Client
 Public Class ABMT
-
     Public strconexion As String
     Public strcampos As String
     Public conx As OracleConnection
@@ -18,12 +17,13 @@ Public Class ABMT
             conx = New OracleConnection
             conx.ConnectionString = strconexion
             conx.Open()
+            'MsgBox("CONECTADO!!")
         Catch ex As Exception
             MsgBox(ex.ToString)
         End Try
     End Sub
 
-    Public Sub Insertar(ByVal TABLA As String, ByVal Valores As String)
+    Public Sub Insertar(ByVal TABLA As String, ByVal strcampos As String, ByVal Valores As String)
         Try
             Dim Sql As String = "INSERT INTO " & TABLA & " (" & strcampos & ")" _
                         + " VALUES (" & Valores & ")"
@@ -33,6 +33,8 @@ Public Class ABMT
         Catch ex As Exception
             MsgBox(ex.ToString)
         Finally
+            MsgBox("LOS DATOS SE HAN GUARDADO EXITOSAMENTE")
+            'MsgBox("***DESCONECTADO***")
             conx.Close()
         End Try
     End Sub
@@ -49,8 +51,47 @@ Public Class ABMT
             conx.Close()
         End Try
     End Sub
+    Public Sub cargargrid(datagrid As DataGridView, TABLA As String)
+        Try
+            ConectarBD()
+            Dim PERSONAds As New DataSet
+            Dim adaptador As New OracleDataAdapter("select * from " + TABLA, conx)
+            adaptador.Fill(PERSONAds, TABLA)
+            datagrid.DataSource = PERSONAds.Tables(TABLA)
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        Finally
+            'MsgBox("***DESCONECTADO***")
+        End Try
+    End Sub
+    Public Sub consultamaterias(datagrid As DataGridView, DATO As String)
+        Try
+            ConectarBD()
+            Dim PERSONAds As New DataSet
+            Dim adaptador As New OracleDataAdapter("SELECT MASIGNACIONES.ID_ASIGNACION, MASIGNATURAS.DESCRIPCION FROM MASIGNATURAS INNER JOIN MASIGNACIONES ON MASIGNATURAS.ID_MASIGNATURAS = MASIGNACIONES.RELAASIGNATURA WHERE MASIGNACIONES.RELAPERSONA = " + DATO, conx)
+            adaptador.Fill(PERSONAds, "MASIGNATURAS")
+            datagrid.DataSource = PERSONAds.Tables("MASIGNATURAS")
+        Catch ex As Exception
+            MsgBox(ex.ToString)
 
-    Public Sub CargarCombo(COMBO As ComboBox, ByVal TABLA As String)
+        End Try
+
+    End Sub
+    Public Sub traerultimoregistroaundatagrid(datagrid As DataGridView, TABLA As String, campo As String)
+        Try
+            ConectarBD()
+            Dim PERSONAds As New DataSet
+            'Dim adaptador As New OracleDataAdapter("select * from " + TABLA, conx)
+            Dim adaptador As New OracleDataAdapter("SELECT " + campo + " FROM " + TABLA + " WHERE ID_" + TABLA + " =(SELECT MAX(" + TABLA + ".ID_" + TABLA + ") FROM " + TABLA + ")", conx)
+            adaptador.Fill(PERSONAds, TABLA)
+            datagrid.DataSource = PERSONAds.Tables(TABLA)
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        Finally
+            'MsgBox("***DESCONECTADO***")
+        End Try
+    End Sub
+    Public Sub CargarCombo(COMBO As ComboBox, ByVal TABLA As String, DATO As String) ', dato As String)
         Try
             Dim SelecTabla As String = "SELECT * FROM " + TABLA
             ConectarBD()
@@ -61,7 +102,7 @@ Public Class ABMT
             dt.Load(DatReader, LoadOption.OverwriteChanges)
             COMBO.DataSource = dt
             COMBO.ValueMember = "ID_" + TABLA
-            COMBO.DisplayMember = "DESCRIPCION"
+            COMBO.DisplayMember = DATO
         Catch ex As Exception ' catches any error
             MessageBox.Show(ex.Message.ToString())
         Finally
@@ -83,31 +124,6 @@ Public Class ABMT
         End Try
     End Sub
 
-    Public Sub TraerDatos(ByVal DatSet As DataSet, ByVal TABLA As String, Optional ByVal SelecID As Long = -1)
-        Dim SelecTabla As String
-        Dim Param As New OracleParameter
-        If String.IsNullOrEmpty(TABLA) Then Exit Sub
-        If SelecID = -1 Then
-            DatSet.Tables(TABLA).NewRow()
-            Exit Sub
-        End If
-        SelecTabla = "SELECT * FROM " & TABLA & " WHERE ID_" & TABLA & "= :1"
-        Param.OracleDbType = OracleDbType.Long
-        Param.Value = SelecID
-        Try
-            ConectarBD()
-            datos = New OracleDataAdapter(SelecTabla, conx)
-            With datos
-                '.SelectCommand.Connection = Conn
-                '.SelectCommand.CommandText = SelectString
-                .SelectCommand.Parameters.Add(Param)
-                .Fill(DatSet, TABLA)
-            End With
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        Finally
-        End Try
-    End Sub
 
 End Class
 

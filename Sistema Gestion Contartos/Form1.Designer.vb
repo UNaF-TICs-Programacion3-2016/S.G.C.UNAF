@@ -26,13 +26,10 @@ Partial Class frmMenu
         Me.CurriculumVitaeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NuevoCVToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AspirantesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AsignarMateriaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DictamenesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoDictamenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContratosToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NuevoContratoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -56,21 +53,14 @@ Partial Class frmMenu
         'NuevoCVToolStripMenuItem
         '
         Me.NuevoCVToolStripMenuItem.Name = "NuevoCVToolStripMenuItem"
-        Me.NuevoCVToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.NuevoCVToolStripMenuItem.Size = New System.Drawing.Size(127, 22)
         Me.NuevoCVToolStripMenuItem.Text = "Nuevo CV"
         '
         'AspirantesToolStripMenuItem
         '
-        Me.AspirantesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AsignarMateriaToolStripMenuItem})
         Me.AspirantesToolStripMenuItem.Name = "AspirantesToolStripMenuItem"
         Me.AspirantesToolStripMenuItem.Size = New System.Drawing.Size(74, 20)
         Me.AspirantesToolStripMenuItem.Text = "Aspirantes"
-        '
-        'AsignarMateriaToolStripMenuItem
-        '
-        Me.AsignarMateriaToolStripMenuItem.Name = "AsignarMateriaToolStripMenuItem"
-        Me.AsignarMateriaToolStripMenuItem.Size = New System.Drawing.Size(157, 22)
-        Me.AsignarMateriaToolStripMenuItem.Text = "Asignar Materia"
         '
         'ToolStripMenuItem1
         '
@@ -79,16 +69,9 @@ Partial Class frmMenu
         '
         'DictamenesToolStripMenuItem
         '
-        Me.DictamenesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoDictamenToolStripMenuItem})
         Me.DictamenesToolStripMenuItem.Name = "DictamenesToolStripMenuItem"
         Me.DictamenesToolStripMenuItem.Size = New System.Drawing.Size(81, 20)
         Me.DictamenesToolStripMenuItem.Text = "Dictamenes"
-        '
-        'NuevoDictamenToolStripMenuItem
-        '
-        Me.NuevoDictamenToolStripMenuItem.Name = "NuevoDictamenToolStripMenuItem"
-        Me.NuevoDictamenToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
-        Me.NuevoDictamenToolStripMenuItem.Text = "Nuevo Dictamen"
         '
         'ToolStripMenuItem2
         '
@@ -97,16 +80,9 @@ Partial Class frmMenu
         '
         'ContratosToolStripMenuItem
         '
-        Me.ContratosToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NuevoContratoToolStripMenuItem})
         Me.ContratosToolStripMenuItem.Name = "ContratosToolStripMenuItem"
         Me.ContratosToolStripMenuItem.Size = New System.Drawing.Size(71, 20)
         Me.ContratosToolStripMenuItem.Text = "Contratos"
-        '
-        'NuevoContratoToolStripMenuItem
-        '
-        Me.NuevoContratoToolStripMenuItem.Name = "NuevoContratoToolStripMenuItem"
-        Me.NuevoContratoToolStripMenuItem.Size = New System.Drawing.Size(159, 22)
-        Me.NuevoContratoToolStripMenuItem.Text = "Nuevo Contrato"
         '
         'SalirToolStripMenuItem
         '
@@ -137,12 +113,9 @@ Partial Class frmMenu
     Friend WithEvents CurriculumVitaeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NuevoCVToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents AspirantesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AsignarMateriaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents DictamenesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NuevoDictamenToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
     Friend WithEvents ContratosToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NuevoContratoToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents SalirToolStripMenuItem As ToolStripMenuItem
 End Class
